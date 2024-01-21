@@ -2,6 +2,10 @@ import java.util.HashMap;
 
 public class RomanToInteger {
 
+    /**
+     * @param s
+     * @return
+     */
     public static int romanToInt(String s) {
         if (s == null || s.length() == 0) {
             return 0;
@@ -29,8 +33,13 @@ public class RomanToInteger {
         return result;
     }
 
-
-    public static int romanToInt_2(String s) {
+    /**
+     * This is the optimised solution from the leetcode.om, the above function takes 7ms while this one takes 2 ms
+     *
+     * @param s
+     * @return
+     */
+    public static int romanToIntOptimised(String s) {
         int ans = 0;
         int num = 0;
         int prev = 0;
@@ -61,7 +70,7 @@ public class RomanToInteger {
         String s3 = "MCMXCIV";
 
         System.out.println(s1 + " in integer: " + romanToInt(s1));
-        System.out.println(s2 + " in integer: " + romanToInt_2(s2));
+        System.out.println(s2 + " in integer: " + romanToIntOptimised(s2));
         System.out.println(s3 + " in integer: " + romanToInt(s3));
     }
 }

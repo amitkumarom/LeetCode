@@ -1,5 +1,10 @@
 public class PalindromeCheck {
 
+    /**
+     *
+      * @param x
+     * @return
+     */
     public static boolean isPalindrome(int x) {
         if (x < 0) {
             // Negative numbers are not palindromes
