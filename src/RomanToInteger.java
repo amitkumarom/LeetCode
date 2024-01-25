@@ -34,7 +34,7 @@ public class RomanToInteger {
     }
 
     /**
-     * This is the optimised solution from the leetcode.om, the above function takes 7ms while this one takes 2 ms
+     * This is the optimised solution from the leetcode.com, the above function takes 7ms while this one takes 2 ms
      *
      * @param s
      * @return
@@ -68,9 +68,11 @@ public class RomanToInteger {
         String s1 = "III";
         String s2 = "LVIII";
         String s3 = "MCMXCIV";
+        String s4 = "MXCIV";
 
         System.out.println(s1 + " in integer: " + romanToInt(s1));
         System.out.println(s2 + " in integer: " + romanToIntOptimised(s2));
         System.out.println(s3 + " in integer: " + romanToInt(s3));
+        System.out.println(s4 + " in integer: " + romanToIntOptimised(s4));
     }
 }
